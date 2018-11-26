@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="divBodyWrap">
+            <input type=text id="txbTableGenerator" name="tableGenerator">
+            <button for="tableGeneratorTxb" id="btnGo">Go</button>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="jQueryGenerator.js"></script>
+        <style>
+            th,td { 
+                border: solid black 1px;
+                height: 10px;
+                width: 50%;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            .shade tr:nth-child(even) {
+                background: #DDD;
+            }
+            .darkLine tr:nth-child(10n + 11) {
+                border-bottom: solid black 5px;
+            }
+        </style>
+    </body>
+</html>
